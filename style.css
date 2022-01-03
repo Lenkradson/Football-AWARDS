@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+/*      HEADER       */
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: darkgoldenrod;
+  height: 70px;
+}
+
+header ul li{
+  padding-left: 20px;
+  float: left;
+}
+
+header h1{
+  float: left;
+}
+
+/*      MAIN       */
+
+#ballon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1100px;
+  background-color: black;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#h2-concorrentes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 105px;
+  background-color: black;
+  color: darkgoldenrod;
+}
+
+#list-concorrentes{
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 452px;
+  background-color: darkgoldenrod;
+  color: darkgoldenrod;
+}
+
+#list-concorrentes li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 50px;
+  width: 430px;
+  border-color: white;
+  border-radius: 10px;
+}
+
+/*       FOOTER       */
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70px;
+  background-color: black;
+  color: white;
+}
+
+
+#social-media img{
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 32px;
+}
