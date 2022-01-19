@@ -1,93 +1,155 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+  }
 
-li{
-  list-style: none;
-}
+  a{
+    color: black;
+  }
+  
+  /*      HEADER       */
+  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: darkgoldenrod;
+    height: 70px;
+  }
+  
+  header ul li{
+    padding-left: 20px;
+    float: left;
+  }
+  
+  header h1{
+    float: left;
+  }
+  
+  /*      MAIN       */
+  
+  #ballon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-/*      HEADER       */
-
-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: darkgoldenrod;
-  height: 70px;
-}
-
-header ul li{
-  padding-left: 20px;
-  float: left;
-}
-
-header h1{
-  float: left;
-}
-
-/*      MAIN       */
-
-#ballon{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 1100px;
-  background-color: black;
-  color: white;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-#h2-concorrentes{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 105px;
-  background-color: black;
-  color: darkgoldenrod;
-}
-
-#list-concorrentes{
-  display: flex;
-  padding-left: 30px;
-  padding-right: 30px;
-  align-items: center;
-  justify-content: center;
-  height: 452px;
-  background-color: darkgoldenrod;
-  color: darkgoldenrod;
-}
-
-#list-concorrentes li{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  height: 50px;
-  width: 430px;
-  border-color: white;
-  border-radius: 10px;
-}
-
-/*       FOOTER       */
-
-footer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 70px;
-  background-color: black;
-  color: white;
-}
+  #ballon p{
+    font-size: 25px;
+  }
+  
+  #h2-concorrentes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 105px;
+    background-color: rgb(0, 0, 0);
+    color: darkgoldenrod;
+  }
+  
+  #list-concorrentes{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 452px;
+    background-color: darkgoldenrod;
+    color: darkgoldenrod;
+  }
+  
+  #list-concorrentes li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 50px;
+    width: 430px;
+    border-color: white;
+    border-radius: 10px;
+  }
+  
+  /*       FOOTER       */
+  
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    background-color: black;
+    color: white;
+  }
+  
+  
+  #social-media img{
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 42px;
+  }
 
 
-#social-media img{
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 32px;
-}
+  @media (max-width: 1100px)
+  {
+    header ul li{
+      display: none;
+    }
+
+    *{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    #ballon{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 1000px;
+      background-color: black;
+      color: white;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    #ballon p{
+      padding-top: 60px;
+      font-size: 15px;
+    }
+
+    #ballon img{
+      width: 200px;
+    }
+
+    #list-concorrentes li{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      height: 50px;
+      width: 300px;
+      border-color: white;
+      border-radius: 10px;
+    }
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    header h1{
+      font-size: 30px;
+    }
+  }
